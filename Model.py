@@ -140,7 +140,7 @@ for epoch in range(epochs):
         break
 
 # Load the best model after training
-model.load_state_dict(torch.load("best_model.pt"))
+model.load_state_dict(torch.load("Model.pt"))
 
 # Evaluation
 model.eval()
