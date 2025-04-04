@@ -16,8 +16,8 @@ This project implements a speech deepfake detection system using the AASIST mode
 ├── Load_data.py        # Loads and saves the data as .csv
 ├── Preprocess.py       # Audio preprocessing (MFCC + multiprocessing)
 ├── Requirements.txt    # Required Python libraries
-├── Model.pt            # Saved PyTorch model (optional)
-├── REPORT.md           # Project documentation 
+├── Model.pt            # Saved PyTorch model 
+├── Project_Report.pdf  # Project documentation 
 └── README.md           # This file
 ```
 
@@ -25,16 +25,22 @@ This project implements a speech deepfake detection system using the AASIST mode
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/deepfake-speech-detector.git
-cd deepfake-speech-detector
+git clone https://github.com/PiyushG1816/Deepfake-Detection.git
 ```
 
 ### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+### 3. Dataset
 
-### 3. Dataset Preparation
+We used the publicly available dataset from Kaggle:
+
+[🔗 The Fake or Real Dataset](https://www.kaggle.com/datasets/mohammedabdeldayem/the-fake-or-real-dataset)
+
+Download it from the above link to use the dataset.
+
+### 4. Dataset Preparation
 Organize your dataset as follows:
 ```
 data_root/
@@ -46,7 +52,7 @@ data_root/
 │   └── fake/
 ```
 
-### 4. Preprocess Audio
+### 5. Preprocess Audio
 ```bash
 python Preprocess.py
 ```
@@ -54,7 +60,7 @@ This generates:
 - `train_features.npy`, `train_labels.npy`
 - `val_features.npy`, `val_labels.npy`
 
-### 5. Train the Model
+### 6. Train the Model
 ```bash
 python Model.py
 ```
