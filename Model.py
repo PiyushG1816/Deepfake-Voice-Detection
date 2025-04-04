@@ -54,7 +54,7 @@ class AASIST(nn.Module):
         return x
 
 class EarlyStopping: # Stops training if validation loss doesn't improve after patience epochs.
-    def __init__(self, patience=5, delta=0.001, path='best_model.pt'):
+    def __init__(self, patience=5, delta=0.001, path='Model.pt'):
         self.patience = patience
         self.delta = delta
         self.path = path
