@@ -1,5 +1,4 @@
 import torch
-import tensorflow
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 import torch.optim as optim
