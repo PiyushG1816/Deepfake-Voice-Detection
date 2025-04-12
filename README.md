@@ -66,7 +66,7 @@ python Model.py
 ```
 
 ## Results
-- **Validation Accuracy**: ~86.91%
+- **Validation Accuracy**: ~74%
 - **Early Stopping**: Enabled to avoid overfitting
 
 ## Model Architecture (Simplified)
