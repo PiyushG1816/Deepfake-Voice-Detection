@@ -4,6 +4,7 @@ import os
 import numpy as np
 
 app = Flask(__name__,template_folder="templates")
+app.config['MAX_CONTENT_LENGTH'] = 5 * 1024 * 1024  # Limit upload to 5MB
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
