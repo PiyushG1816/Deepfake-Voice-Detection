@@ -8,3 +8,6 @@ tqdm
 matplotlib
 Seaborn
 Scikit-learn
+Flask
+soundfile
+gunicorn
