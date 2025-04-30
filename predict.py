@@ -93,5 +93,5 @@ def predict_audio(file_path):
         _, predicted = torch.max(output, 1)
         label = predicted.item()
 
-    return 'Real' if label == 0 else 'Fake'
+    return 'Real' if label == 1 else 'Fake'
 
