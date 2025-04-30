@@ -40,7 +40,7 @@ model.eval()
 def extract_mfcc(file_path):
     try:
         # Load audio
-        waveform, sr = librosa.load(file_path, sr=16000, mono=True)
+        waveform, sr = librosa.load(file_path, sr=16000, mono=True,duration=20.0)
 
         # Check if empty after trimming
         waveform, _ = librosa.effects.trim(waveform)
