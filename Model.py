@@ -91,7 +91,7 @@ for param in model.conv2.parameters():
     param.requires_grad = False
 
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=1e-5)
+optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
 early_stopping = EarlyStopping(patience=5)
 
